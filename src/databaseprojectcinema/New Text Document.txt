@@ -1,0 +1,18 @@
+#add:hover{     
+
+   -fx-opacity: 0.6;
+
+}
+
+#clear:hover{     
+
+   -fx-opacity: 0.6;
+
+}
+
+#back:hover{     
+
+   -fx-opacity: 0.6;
+
+}
+

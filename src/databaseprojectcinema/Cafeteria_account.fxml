@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="databaseprojectcinema.Cafeteria_accountController">
+   <children>
+      <Label fx:id="sold_p" layoutX="600.0" layoutY="57.0" text="Sold Products:" textFill="#ffa105" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="565.0" fitWidth="1222.0" layoutX="-3.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bordo-background-8.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="144.0" fitWidth="311.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Cinema_City_Master_RGB_blackBg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="918.0" layoutY="509.0" mnemonicParsing="false" onAction="#handleButtonActionback" prefHeight="34.0" prefWidth="55.0" style="-fx-background-color: #F18525; -fx-background-radius: 5em;" text="Back" />
+      <DatePicker fx:id="fpicker" layoutX="220.0" layoutY="176.0" onAction="#handleButtonActionSet" prefHeight="26.0" prefWidth="278.0" promptText="From Date" />
+      <DatePicker fx:id="tpicker" layoutX="220.0" layoutY="236.0" onAction="#handleButtonActionSet" prefHeight="26.0" prefWidth="279.0" promptText="To Date" />
+      <Label layoutX="30.0" layoutY="170.0" text="From Date:" textFill="#f18525">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="230.0" text="To Date:" textFill="#f18525">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="290.0" prefHeight="42.0" prefWidth="204.0" text="Total Sales:" textFill="#f18525">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="350.0" text="Expenses:" textFill="#f18525">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="470.0" text="Total Revenues(Nis):" textFill="#f18525">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="410.0" prefHeight="40.0" prefWidth="509.0" text="--------------------------------------------" textFill="#ffa105">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="561.0" layoutY="48.0" prefHeight="415.0" prefWidth="418.0" visible="false">
+         <columns>
+            <TableColumn fx:id="pname" prefWidth="222.93328857421875" text="Product Name" />
+            <TableColumn fx:id="quantity" prefWidth="194.39999999999998" text="Quantity" />
+         </columns>
+      </TableView>
+      <Label fx:id="total" layoutX="368.0" layoutY="464.0" prefHeight="51.0" prefWidth="180.0" textFill="#ffa105">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="exp" layoutX="310.0" layoutY="350.0" prefHeight="42.0" prefWidth="240.0" textFill="#ffa105">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="tsales" layoutX="310.0" layoutY="290.0" prefHeight="34.0" prefWidth="184.0" textFill="#ffa105">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

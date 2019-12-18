@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="988.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="databaseprojectcinema.SellerController">
+   <children>
+      <ImageView fitHeight="565.0" fitWidth="1027.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sAfIc7.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="manager" layoutX="618.0" layoutY="124.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="87.0" prefWidth="270.0" style="-fx-background-radius: 80; -fx-background-color: #F18525;" stylesheets="@SecondScreen.css" text="Tickets Seller">
+         <font>
+            <Font name="Microsoft Himalaya" size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="employee" layoutX="611.0" layoutY="335.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="283.0" style="-fx-background-color: #F18525; -fx-background-radius: 80;" stylesheets="@SecondScreen.css" text="Back">
+         <font>
+            <Font name="Microsoft Himalaya" size="45.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="118.0" fitWidth="162.0" layoutX="832.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Cinema_City_Master_RGB_blackBg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="employee1" layoutX="618.0" layoutY="232.0" mnemonicParsing="false" onAction="#handleButtonAction1" prefHeight="87.0" prefWidth="270.0" style="-fx-background-radius: 80; -fx-background-color: #F18525;" stylesheets="@SecondScreen.css" text="Cafeteria Sellers">
+         <font>
+            <Font name="Microsoft Himalaya" size="45.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
